@@ -1,6 +1,7 @@
 ## 과제 체크포인트
 
 ### 배포 링크
+https://front-5th-chapter1-3-ebon.vercel.app/
 
 <!--
 배포 링크를 적어주세요
@@ -12,19 +13,19 @@
 
 ### 기본과제
 
-- [ ] shallowEquals 구현 완료
-- [ ] deepEquals 구현 완료
-- [ ] memo 구현 완료
-- [ ] deepMemo 구현 완료
-- [ ] useRef 구현 완료
-- [ ] useMemo 구현 완료
-- [ ] useDeepMemo 구현 완료
-- [ ] useCallback 구현 완료
+- [x] shallowEquals 구현 완료
+- [x] deepEquals 구현 완료
+- [x] memo 구현 완료
+- [x] deepMemo 구현 완료
+- [x] useRef 구현 완료
+- [x] useMemo 구현 완료
+- [x] useDeepMemo 구현 완료
+- [X] useCallback 구현 완료
 
 ### 심화 과제
 
-- [ ] 기본과제에서 작성한 hook을 이용하여 렌더링 최적화를 진행하였다.
-- [ ] Context 코드를 개선하여 렌더링을 최소화하였다.
+- [x] 기본과제에서 작성한 hook을 이용하여 렌더링 최적화를 진행하였다.
+- [x] Context 코드를 개선하여 렌더링을 최소화하였다.
 
 ## 과제 셀프회고
 
