@@ -2,13 +2,14 @@ import { useState } from "react";
 import { renderLog } from "../utils.ts";
 import { memo } from "../@lib";
 import { Item } from "../type";
-import ItemComponent from "./Item.tsx";
+import { useThemeContext } from "../context/ThemeContext/ThemeContext.tsx";
 
 export const ItemList: React.FC<{
   items: Item[];
   onAddItemsClick: () => void;
 }> = ({ items, onAddItemsClick }) => {
   renderLog("ItemList rendered");
+  const { theme } = useThemeContext();
   const [filter, setFilter] = useState("");
 
   const filteredItems = items.filter(
@@ -49,7 +50,12 @@ export const ItemList: React.FC<{
       </ul>
       <ul className="space-y-2">
         {filteredItems.map((item, index) => (
-          <ItemComponent item={item} key={index} />
+          <li
+            key={index}
+            className={`p-2 rounded shadow ${theme === "light" ? "bg-white text-black" : "bg-gray-700 text-white"}`}
+          >
+            {item.name} - {item.category} - {item.price.toLocaleString()}원
+          </li>
         ))}
       </ul>
     </div>
