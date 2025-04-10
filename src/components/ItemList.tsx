@@ -1,9 +1,8 @@
-// ItemList 컴포넌트
 import { useState } from "react";
 import { renderLog } from "../utils.ts";
 import { memo } from "../@lib";
-import { useThemeContext } from "../context/ThemeContext/ThemeContext.tsx";
 import { Item } from "../type";
+import ItemComponent from "./Item.tsx";
 
 export const ItemList: React.FC<{
   items: Item[];
@@ -11,7 +10,6 @@ export const ItemList: React.FC<{
 }> = ({ items, onAddItemsClick }) => {
   renderLog("ItemList rendered");
   const [filter, setFilter] = useState("");
-  const { theme } = useThemeContext();
 
   const filteredItems = items.filter(
     (item) =>
@@ -51,12 +49,7 @@ export const ItemList: React.FC<{
       </ul>
       <ul className="space-y-2">
         {filteredItems.map((item, index) => (
-          <li
-            key={index}
-            className={`p-2 rounded shadow ${theme === "light" ? "bg-white text-black" : "bg-gray-700 text-white"}`}
-          >
-            {item.name} - {item.category} - {item.price.toLocaleString()}원
-          </li>
+          <ItemComponent item={item} key={index} />
         ))}
       </ul>
     </div>

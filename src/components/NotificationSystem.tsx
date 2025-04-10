@@ -1,4 +1,3 @@
-import React from "react";
 import { renderLog } from "../utils.ts";
 import { memo } from "../@lib";
 import { useNotificationContext } from "../context/NotificationContext/NotificationContext.tsx";
