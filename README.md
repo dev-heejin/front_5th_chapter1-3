@@ -38,12 +38,18 @@ https://front-5th-chapter1-3-ebon.vercel.app/
 - 구현 과정에서의 기술적 도전과 해결
 -->
 
+- memo 를 어떻게 사용하는건지, context 를 어떻게 구성하는지 좀 더 개념적으로 이해할 수 있었습니다.
+
 ### 코드 품질
 <!-- 예시
 - 특히 만족스러운 구현
 - 리팩토링이 필요한 부분
 - 코드 설계 관련 고민과 결정
 -->
+
+- context / provider 를 관심사마다 묶어두었는데, 괜찮은 구조인지 잘 모르겠습니다.
+- context 를 활용하는 컴포넌트에 대한 고민이 있었습니다.
+- 
 
 ### 학습 효과 분석
 <!-- 예시
@@ -59,6 +65,10 @@ https://front-5th-chapter1-3-ebon.vercel.app/
 -->
 
 ## 리뷰 받고 싶은 내용
+
+- context 폴더 안에 사용하는 context, provider, type 을 모아두었습니다.
+index 를 활용한 폴더구조로 context 끼리, provider 끼리 나눠두는게 좋았을지 궁금합니다!
+- context 를 사용하는 component 들이 덩어리가 클수록 혹은 작을수록 좋은게 있을까요?
 
 <!--
 피드백 받고 싶은 내용을 구체적으로 남겨주세요
