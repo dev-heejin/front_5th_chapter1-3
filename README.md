@@ -48,6 +48,7 @@ https://front-5th-chapter1-3-ebon.vercel.app/
 -->
 
 - context / provider 를 관심사마다 묶어두었는데, 괜찮은 구조인지 잘 모르겠습니다.
+- itemList 화면에서 map 내부에서 사용하는 item 을 분리하면 왜 테스트를 통과하지 못하는지 확인해볼 예정입니다.
 
 ### 학습 효과 분석
 <!-- 예시
